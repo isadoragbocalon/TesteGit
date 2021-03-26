@@ -1,0 +1,29 @@
+package trabalho2;
+
+import java.util.Scanner;
+
+public class questao55 {
+	
+	
+	public static void main(String[] args){
+		
+	Scanner ler = new Scanner(System.in);
+	String nomeCompleto;
+
+	System.out.printf("Informe seu nome completo:\n");
+	nomeCompleto = ler.nextLine();
+	
+	
+	
+	
+	String[] palavrasNome == nomeCompleto.split(" ");
+	
+	
+	
+
+	System.out.printf(nomeCompleto, args);
+		
+		
+	}
+	
+}

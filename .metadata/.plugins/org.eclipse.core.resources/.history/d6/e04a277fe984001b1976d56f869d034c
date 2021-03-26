@@ -1,0 +1,19 @@
+package trabalho1;
+
+import java.util.Random;
+
+public class Trabalho1 {
+	
+	public static void main(String[] args) {
+
+        Random gerador = new Random();
+
+        //100 jogadas de 1 número inteiro aleatório entre 1 e 6
+        for (int i = 0; i < 100 ; i++) {
+            System.out.println(gerador.nextInt(6)+1);
+        }
+    }
+	
+	
+
+}

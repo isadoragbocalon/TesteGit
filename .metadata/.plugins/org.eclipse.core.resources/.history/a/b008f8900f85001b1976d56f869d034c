@@ -1,0 +1,85 @@
+package trabalho44;
+
+import java.util.Arrays;
+
+public class trabalho {
+
+
+	public static void main(String[] args) 
+	{
+		int v[] = new int[100]; 
+		int numero[]= new int[6];
+		int maior, valor;
+		Arrays.fill(numero, 0);
+		
+		
+		for (int i=0; i<v.length; i++) {
+			v[i] = (int) (1+Math.random()*(6));
+		}
+		
+		
+		System.out.printf("Números gerados:");
+		for (int i=0;i<v.length;i++) 
+		{
+			if((i%10)==0) //System.out.println(); //melhor vizualização
+			System.out.printf("%d ", v[i]);
+		}
+		
+		for (int i=0;i<v.length;i++) 
+		{
+			switch (v[i])
+			{
+				case 1:
+				{
+					numero[0]++;
+					break;
+				}
+				case 2:
+				{
+					numero[1]++;
+					break;
+				}
+				case 3:
+				{
+					numero[2]++;
+					break;
+				}
+				case 4:
+				{
+					numero[3]++;
+					break;
+				}
+				case 5:
+				{
+					numero[4]++;
+					break;
+				}
+				case 6:
+				{
+					numero[5]++;
+					break;
+				}
+			}
+		}
+		
+		System.out.println();
+		for(int i=0; i<6;i++)
+		{
+			System.out.printf("O valor %d foi sorteador %d vezes.\n", (i+1), numero[i]);
+		}
+		
+		
+		maior=numero[0];
+		valor=0;
+		for(int i=1; i<6;i++)
+		{
+			if(numero[i]>maior) 
+			{
+				maior=numero[i];
+				valor=i+1;	
+			}
+		}
+		
+		System.out.printf("O valor que mais foi sorteado é %d, com %d vezes.\n", valor, maior);
+	}
+}

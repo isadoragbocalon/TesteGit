@@ -1,0 +1,65 @@
+package trabalho1;
+
+import java.util.Random;
+
+public class Trabalho1 {
+	
+	public static void main(String[] args) {
+
+        Random randomico = new Random();
+        
+        //100 jogadas de 1 número inteiro aleatório entre 1 e 6
+        for (int i = 0; i < 100 ; i++) {
+            System.out.println(randomico.nextInt(6)+1);
+        }
+        
+        //Contagem da quantidade de vezes que tal número aparece
+        int numero;
+        int n1 = 0; 
+    	int n2 = 0; 
+    	int n3 = 0; 
+    	int n4 = 0; 
+    	int n5 = 0; 
+    	int n6 = 0; 
+    	
+    	for(int contador=0; contador<100; contador++) {
+    		numero=(int) (1+ Math.random()*(7-1));
+    		
+    		if(numero==1) {
+    			n1++;
+    		}else if (numero==2) {
+    			n2++;
+    		} else if (numero==3) {
+    			n3++;
+    		} else if (numero==4) {
+    			n4++;
+    		}else if (numero==5) {
+    			n5++;
+    		}else if (numero==6) {
+    			n6++;
+    		}
+    	}
+    	
+    	for(int numero=0; numero<contador.length; numero++) {
+    		int cont=0;
+    		
+    		
+    	}
+    	
+    	
+    	System.out.println("O valor 1 foi sorteado: " +n1+ " vezes");
+    	System.out.println("O valor 2 foi sorteado: " +n2+ " vezes");
+    	System.out.println("O valor 3 foi sorteado: " +n3+ " vezes");
+    	System.out.println("O valor 4 foi sorteado: " +n4+ " vezes");
+    	System.out.println("O valor 5 foi sorteado: " +n5+ " vezes");
+    	System.out.println("O valor 6 foi sorteado: " +n6+ " vezes");
+    	System.out.println("O valor que mais foi sorteado foi:" +aparece+);
+	}
+    
+}
+    	
+
+  
+   
+
+

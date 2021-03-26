@@ -1,0 +1,28 @@
+package trabalho1;
+
+import java.util.Random;
+
+public class Trabalho1 {
+	
+	public static void main(String[] args) {
+
+        Random gerador = new Random();
+        
+        int n1 = 0; //mantém a contagem de 1s lançados
+    	int n2 = 0; //contagem de 2s lançados
+    	int n3 = 0; //contagem de 3s lançados
+    	int n4 = 0; //contagem de 4s lançados
+    	int n5 = 0; //contagem de 5s lançados
+    	int n6 = 0; //contagem de 6s lançados
+    	
+    	int gerador;
+
+        //100 jogadas de 1 número inteiro aleatório entre 1 e 6
+        for (int i = 0; i < 100 ; i++) {
+            System.out.println(gerador.nextInt(6)+1);
+        }
+    }
+	
+	
+
+}

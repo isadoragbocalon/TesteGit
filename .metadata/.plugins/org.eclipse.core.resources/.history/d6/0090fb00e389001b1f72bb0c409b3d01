@@ -1,0 +1,42 @@
+package trabalho2;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class questao55 {
+	
+	
+	public static void main(String[] args){
+		
+	Scanner ler = new Scanner(System.in);
+	String nomeCompleto;
+
+	System.out.printf("Informe seu nome completo:\n");
+	nomeCompleto = ler.nextLine();
+	
+	
+	
+	//Quebra do Nome
+	String[] palavrasNome = nomeCompleto.split(" ");
+	
+	//Impressão do Nome sem abreviar
+	String primeiroNome = palavrasNome[0];
+	String ultimoNome = palavrasNome[palavrasNome.length-1];
+	
+	//Impressão dos nomes abreviados 
+	String nomeFinal = primeiroNome;
+	
+	for (int i = 1; i < palavrasNome.length-1; i++) {
+		
+	}
+	
+	
+	
+	
+
+	System.out.printf(nomeCompleto, args);
+		
+		
+	}
+	
+}
